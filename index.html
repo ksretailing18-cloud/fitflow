@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitFlow | Personalized Fitness Coaching for College Students</title>
+    <meta
+      name="description"
+      content="FitFlow creates personalized workout plans for college students with changing schedules."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="home-page">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">FitFlow</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">Menu</button>
+        <nav class="site-nav" id="siteNav">
+          <a class="active" href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy-col">
+            <p class="eyebrow">Personalized Fitness Coaching for Students</p>
+            <h1>Stop guessing. Start training around your real college schedule.</h1>
+            <p class="lead">
+              FitFlow helps college students who are new to lifting build a routine that actually fits classes,
+              labs, clubs, and busy weeks. Enter your schedule and goals, and get a plan you can stick to.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="how-it-works.html">Try the Demo</a>
+              <a class="btn btn-secondary btn-glass" href="about.html">Learn Our Mission</a>
+            </div>
+            <div class="hero-stats">
+              <article class="stat-chip">
+                <strong>92%</strong>
+                <span>students stay consistent longer with adaptive plans</span>
+              </article>
+              <article class="stat-chip">
+                <strong>4 min</strong>
+                <span>to generate a personalized weekly schedule</span>
+              </article>
+            </div>
+          </div>
+          <div class="hero-app reveal">
+            <p class="mock-eyebrow">Plan Preview</p>
+            <h2>Week 5: Strength + Consistency</h2>
+            <div class="mock-list">
+              <div class="mock-row">
+                <span>Mon</span>
+                <p>Upper body fundamentals after ECON 210</p>
+              </div>
+              <div class="mock-row">
+                <span>Wed</span>
+                <p>Lower body + mobility between class blocks</p>
+              </div>
+              <div class="mock-row">
+                <span>Fri</span>
+                <p>Full-body progression session (45 min)</p>
+              </div>
+            </div>
+            <div class="mock-tag">Auto-adjust on missed sessions enabled</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section social-proof">
+        <div class="container social-proof-wrap reveal">
+          <p>Designed for student life</p>
+          <p>Beginner-first lifting plans</p>
+          <p>Adaptive schedule engine</p>
+          <p>Progress without burnout</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Who It’s For</p>
+            <h2>Made for college students new to lifting</h2>
+          </div>
+          <div class="cards-grid">
+            <article class="card reveal">
+              <h3>Personalized Workout Plans</h3>
+              <p>
+                No copy-paste programs. Your workouts are based on your goals, current experience, and available
+                training days.
+              </p>
+            </article>
+            <article class="card reveal">
+              <h3>Beginner-Friendly Structure</h3>
+              <p>
+                Every week is easy to follow with clear sessions, recovery balance, and progress goals that make
+                sense for first-time lifters.
+              </p>
+            </article>
+            <article class="card reveal">
+              <h3>Schedule-Based Planning</h3>
+              <p>
+                FitFlow works around classes and commitments so your training plan matches your real calendar.
+              </p>
+            </article>
+            <article class="card reveal">
+              <h3>Adaptive Weekly Adjustments</h3>
+              <p>
+                Miss a day? Your plan rebalances automatically so you stay on track without restarting.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container two-col">
+          <div class="reveal">
+            <p class="eyebrow">Join Early Access</p>
+            <h2>Get updates as FitFlow launches on campus</h2>
+            <p>
+              Be first to try new features, student pricing, and training templates built specifically for busy
+              semesters.
+            </p>
+          </div>
+          <form id="signupForm" class="form-panel reveal" novalidate>
+            <label for="signupName">Name</label>
+            <input id="signupName" name="name" type="text" placeholder="Your name" required />
+
+            <label for="signupEmail">Email</label>
+            <input id="signupEmail" name="email" type="email" placeholder="you@school.edu" required />
+
+            <button class="btn btn-primary" type="submit">Sign Up</button>
+            <p class="form-message" id="signupMessage" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container quote-block reveal">
+          <p>
+            “Most college students want to get in shape, but the biggest problem isn’t motivation. It’s consistency.
+            FitFlow turns your schedule into a plan that can adapt with you.”
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> FitFlow. Personalized fitness coaching for college students.</p>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How FitFlow Works | Schedule-Based Workout Planning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">FitFlow</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">Menu</button>
+        <nav class="site-nav" id="siteNav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a class="active" href="how-it-works.html">How It Works</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">How It Works</p>
+          <h1>Plan smarter around classes, not against them</h1>
+          <p>
+            Try the interactive preview below. Enter your schedule and training details, then generate a sample week
+            that feels like a real FitFlow plan.
+          </p>
+          <p class="photo-note">Demo mode: this is a front-end AI simulation for your class project.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container how-layout">
+          <form id="demoForm" class="form-panel reveal" novalidate>
+            <h2>Interactive Plan Builder</h2>
+
+            <label for="classSchedule">Class Schedule</label>
+            <textarea
+              id="classSchedule"
+              rows="4"
+              placeholder="Ex: Mon/Wed 9-11am, Tue/Thu 2-4pm, Fri lab 10-12"
+            ></textarea>
+
+            <label for="goal">Fitness Goal</label>
+            <select id="goal" required>
+              <option value="">Select your goal</option>
+              <option value="Muscle Gain">Muscle Gain</option>
+              <option value="Fat Loss">Fat Loss</option>
+              <option value="Strength">Strength</option>
+              <option value="General Fitness">General Fitness</option>
+            </select>
+
+            <label for="experience">Experience Level</label>
+            <select id="experience" required>
+              <option value="">Select your level</option>
+              <option value="Beginner">Beginner</option>
+              <option value="Some Experience">Some Experience</option>
+              <option value="Intermediate">Intermediate</option>
+            </select>
+
+            <label for="availability">Gym Availability</label>
+            <select id="availability" required>
+              <option value="">Days per week</option>
+              <option value="2-3">2-3 days</option>
+              <option value="4">4 days</option>
+              <option value="5+">5+ days</option>
+            </select>
+
+            <button class="btn btn-primary" type="submit">Generate My Plan</button>
+          </form>
+
+          <div class="plan-output reveal" id="demoResult">
+            <h3>AI Plan Preview</h3>
+            <p class="lead">
+              Fill out the form and click <strong>Generate My Plan</strong> to see a fake AI-generated app-style
+              weekly routine.
+            </p>
+          </div>
+        </div>
+
+        <div class="adapt-card reveal">
+          <h2>What happens if you miss a workout?</h2>
+          <p>
+            FitFlow shifts your training load across the rest of the week, protects recovery, and prioritizes your most
+            important sessions so progress continues without guilt or guesswork.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> FitFlow. Personalized fitness coaching for college students.</p>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

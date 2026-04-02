@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact FitFlow | Reach Out</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">FitFlow</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">Menu</button>
+        <nav class="site-nav" id="siteNav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="how-it-works.html">How It Works</a>
+          <a class="active" href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Contact</p>
+          <h1>Let’s talk about FitFlow</h1>
+          <p>
+            Questions, feedback, or partnership ideas? Send a quick message and we’ll get back to you soon.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container two-col">
+          <article class="card reveal">
+            <h2>Connect With Us</h2>
+            <p>
+              FitFlow is focused on helping college students stay consistent in the gym with personalized,
+              schedule-friendly plans.
+            </p>
+            <p>
+              Email: hello@fitflow.app<br />
+              Partnerships: partners@fitflow.app
+            </p>
+          </article>
+
+          <form id="contactForm" class="form-panel reveal" novalidate>
+            <h2>Send a Message</h2>
+
+            <label for="contactName">Name</label>
+            <input id="contactName" name="name" type="text" placeholder="Your name" required />
+
+            <label for="contactEmail">Email</label>
+            <input id="contactEmail" name="email" type="email" placeholder="you@school.edu" required />
+
+            <label for="contactBody">Message</label>
+            <textarea
+              id="contactBody"
+              name="message"
+              rows="5"
+              placeholder="Tell us how we can help"
+              required
+            ></textarea>
+
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <p class="form-message" id="contactMessage" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> FitFlow. Personalized fitness coaching for college students.</p>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
