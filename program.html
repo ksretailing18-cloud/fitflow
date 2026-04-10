@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>How FitFlow Works | Schedule-Based Workout Planning</title>
+    <title>Build Your Workout Split | FitFlow</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,9 +20,9 @@
         <nav class="site-nav" id="siteNav">
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
-          <a class="active" href="how-it-works.html">How It Works</a>
+          <a href="how-it-works.html">How It Works</a>
           <a href="purchase.html">Buy</a>
-          <a href="program.html">Program</a>
+          <a class="active" href="program.html">Program</a>
           <a href="contact.html">Contact</a>
         </nav>
       </div>
@@ -31,30 +31,29 @@
     <main>
       <section class="page-hero">
         <div class="container">
-          <p class="eyebrow">How It Works</p>
-          <h1>Plan smarter around classes, not against them</h1>
+          <p class="eyebrow">Program Builder</p>
+          <h1>Make New Workout Program</h1>
           <p>
-            Try the interactive preview below. Enter your schedule and training details, then generate a sample week
-            that feels like a real FitFlow plan.
+            Enter your availability, experience, and goals to generate a complete workout split with every session mapped out for the week.
           </p>
-          <p class="photo-note">Demo mode: this is a front-end AI simulation for your class project.</p>
         </div>
       </section>
 
       <section class="section">
-        <div class="container how-layout">
-          <form id="demoForm" class="form-panel reveal" novalidate>
-            <h2>Interactive Plan Builder</h2>
+        <div class="container two-col">
+          <form id="programForm" class="form-panel reveal" novalidate>
+            <h2>Create your split</h2>
 
-            <label for="classSchedule">Class Schedule</label>
+            <label for="programSchedule">Class Schedule</label>
             <textarea
-              id="classSchedule"
+              id="programSchedule"
               rows="4"
               placeholder="Ex: Mon/Wed 9-11am, Tue/Thu 2-4pm, Fri lab 10-12"
+              required
             ></textarea>
 
-            <label for="goal">Fitness Goal</label>
-            <select id="goal" required>
+            <label for="programGoal">Fitness Goal</label>
+            <select id="programGoal" required>
               <option value="">Select your goal</option>
               <option value="Muscle Gain">Muscle Gain</option>
               <option value="Fat Loss">Fat Loss</option>
@@ -62,40 +61,63 @@
               <option value="General Fitness">General Fitness</option>
             </select>
 
-            <label for="experience">Experience Level</label>
-            <select id="experience" required>
+            <label for="programExperience">Experience Level</label>
+            <select id="programExperience" required>
               <option value="">Select your level</option>
               <option value="Beginner">Beginner</option>
               <option value="Some Experience">Some Experience</option>
               <option value="Intermediate">Intermediate</option>
             </select>
 
-            <label for="availability">Gym Availability</label>
-            <select id="availability" required>
+            <label for="programAvailability">Gym Availability</label>
+            <select id="programAvailability" required>
               <option value="">Days per week</option>
               <option value="2-3">2-3 days</option>
               <option value="4">4 days</option>
               <option value="5+">5+ days</option>
             </select>
 
-            <button class="btn btn-primary" type="submit">Generate My Plan</button>
+            <label for="programFocus">Training Focus</label>
+            <select id="programFocus" required>
+              <option value="">Select focus</option>
+              <option value="Hypertrophy">Hypertrophy</option>
+              <option value="Strength">Strength</option>
+              <option value="Mobility">Mobility</option>
+              <option value="Balanced">Balanced</option>
+            </select>
+
+            <button class="btn btn-primary" type="submit">Generate Workout Split</button>
           </form>
 
-          <div class="plan-output reveal" id="demoResult">
-            <h3>AI Plan Preview</h3>
+          <div class="plan-output reveal" id="programResult">
+            <h3>Workout Split Preview</h3>
             <p class="lead">
-              Fill out the form and click <strong>Generate My Plan</strong> to see a fake AI-generated app-style
-              weekly routine.
+              Fill out the form to generate a complete weekly workout split. Each session will show the training focus, sample exercises, and the best way to fit them into your week.
             </p>
           </div>
         </div>
+      </section>
 
-        <div class="adapt-card reveal">
-          <h2>What happens if you miss a workout?</h2>
-          <p>
-            FitFlow shifts your training load across the rest of the week, protects recovery, and prioritizes your most
-            important sessions so progress continues without guilt or guesswork.
-          </p>
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Why FitFlow Programs Work</p>
+            <h2>Detailed splits that still fit the student life</h2>
+          </div>
+          <div class="cards-grid">
+            <article class="card reveal">
+              <h3>Built Around Your Availability</h3>
+              <p>
+                FitFlow maximizes the time you have each week with clear training sessions and recovery built in around classes and busy days.
+              </p>
+            </article>
+            <article class="card reveal">
+              <h3>Session-Level Guidance</h3>
+              <p>
+                Every workout includes the focus, movement categories, and suggested set/rep ranges so you never wonder what to do next.
+              </p>
+            </article>
+          </div>
         </div>
       </section>
     </main>

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy FitFlow | Student Fitness Coaching</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">FitFlow</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">Menu</button>
+        <nav class="site-nav" id="siteNav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="how-it-works.html">How It Works</a>
+          <a class="active" href="purchase.html">Buy</a>
+          <a href="program.html">Program</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Subscribe to FitFlow</p>
+          <h1>Choose the plan that fits your semester.</h1>
+          <p>
+            FitFlow gives you a training plan built around your classes, goals, and energy levels. Pick a plan, enter your details, and get started with beginner-friendly coaching designed for campus life.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container pricing-grid">
+          <article class="pricing-card reveal">
+            <h2>Starter</h2>
+            <p class="lead">$9.99 / month</p>
+            <ul>
+              <li>Weekly workout split for 3 training days</li>
+              <li>Schedule-aware session placement</li>
+              <li>Beginner-safe exercise progressions</li>
+            </ul>
+          </article>
+          <article class="pricing-card reveal">
+            <h2>Growth</h2>
+            <p class="lead">$19.99 / month</p>
+            <ul>
+              <li>Weekly workout split for 4 training days</li>
+              <li>Adaptive recovery and intensity tracking</li>
+              <li>Priority support & plan updates</li>
+            </ul>
+          </article>
+          <article class="pricing-card reveal">
+            <h2>Premium</h2>
+            <p class="lead">$49.99 / month</p>
+            <ul>
+              <li>Full training schedule with extra customization</li>
+              <li>Detailed session-level workouts every day</li>
+              <li>Priority onboarding and premium support</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container two-col">
+          <article class="card reveal">
+            <h2>What this service delivers</h2>
+            <p>
+              Every FitFlow subscription includes a personalized weekly split, session-level workout details, and auto-adjustments for missed training days. It's built for busy students who need a plan that moves with their semester.
+            </p>
+            <ul>
+              <li>Program split tailored to your availability</li>
+              <li>Daily workout instructions with focus areas</li>
+              <li>Progress guidance for strength and consistency</li>
+            </ul>
+          </article>
+
+          <form id="purchaseForm" class="form-panel reveal" novalidate>
+            <h2>Start your plan</h2>
+            <label for="purchasePlan">Choose a plan</label>
+            <select id="purchasePlan" name="plan" required>
+              <option value="">Select your plan</option>
+              <option value="Starter">Starter — $9.99 / month</option>
+              <option value="Growth">Growth — $19.99 / month</option>
+              <option value="Premium">Premium — $49.99 / month</option>
+            </select>
+
+            <label for="purchaseName">Name</label>
+            <input id="purchaseName" name="name" type="text" placeholder="Your name" required />
+
+            <label for="purchaseEmail">Email</label>
+            <input id="purchaseEmail" name="email" type="email" placeholder="you@school.edu" required />
+
+            <button class="btn btn-primary" type="submit">Start Membership</button>
+            <p class="form-message" id="purchaseMessage" aria-live="polite"></p>
+            <p class="lead" style="margin-top: 1rem; color: var(--muted);">
+              This page is a demo checkout experience and not connected to a real payment system.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> FitFlow. Personalized fitness coaching for college students.</p>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
